@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils import timezone
+
 
 class Project(models.Model):
     name = models.CharField(max_length=50,unique=True)
@@ -8,5 +8,4 @@ class Project(models.Model):
 
     def __str__(self):
         return self.name
-
 
